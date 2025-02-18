@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rizya Humaira Badrun</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rizya Humaira Badrun</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic.png" alt="Rizya Humaira profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Rizya Humaira Badrun</h1>
+            <p class="section__text__p2">Information Technology student</p>
+            <p>I’m currently a second-semester Information Technology student at Universitas Sumatera Utara (USU). I’m passionate about technology development and programming. I enjoy exploring new digital trends and constantly improving my skills to overcome challenges in the IT field.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rizya-badrun-x061711m/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>I'm Rizya Humaira Badrun, and I was born on 17 November 2006. I'm currently studying Information Technology at Universitas Sumatera Utara (USU) in Medan. I have a strong interest in technology and how it can improve daily life. Outside of my studies, I enjoy reading books. I'm always excited to learn and grow both academically and personally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Education</h1>
+        <div class="container">
+            <div class="card__container">
+               <article class="card__article">
+                  <img src="./assets/smp-pic.jpg" alt="image" class="card__img">
+                  <div class="card__data">
+                     <span class="card__description">SMPS YPSA</span>
+                     <h2 class="card__title">2018-2021</h2>
+                  </div>
+               </article>
+   
+               <article class="card__article">
+                  <img src="./assets/sma-pic.jpg" alt="image" class="card__img">
+                  <div class="card__data">
+                     <span class="card__description">SMAN 3 Medan</span>
+                     <h2 class="card__title">2021-2024</h2>
+                  </div>
+               </article>
+   
+               <article class="card__article">
+                  <img src="./assets/uni-pic.jpg" alt="image" class="card__img">
+                  <div class="card__data">
+                     <span class="card__description">Universitas Sumatera Utara</span>
+                     <h2 class="card__title">2024-sekarang</h2>
+                  </div>
+               </article>
+            </div>
+         </div>
+    </section>
+
+    <section id="skill">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skill</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:rizyahumaira@students.usu.ac.id">rizyahumaira@students.usu.ac.id</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/rizya-badrun-x061711m/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thanks for Visit</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
